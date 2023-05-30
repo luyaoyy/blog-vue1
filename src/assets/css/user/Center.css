@@ -1,0 +1,89 @@
+.center-bk{
+    width: 100vw;
+    background-size: 100%;
+    background: url("../../images/center.jpg") no-repeat;
+    object-fit: cover;
+}
+.center-out {
+    width: 85%;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.center-top {
+    width: 80%;
+    margin: 0 auto;
+    height: 40vh;
+    border-radius: 18px;
+}
+
+.center-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.center-avatar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(250, 248, 248, 0.8);
+    color: black;
+    height: 28%;
+    position: relative;
+    top: -28%;
+    padding: 0 5%;
+}
+
+.center-avatar img {
+    height: 14vh;
+    width: 7vw;
+    border-radius: 12px;
+    transform: translateY(-30%);
+    border: 3px solid #ffffff;
+    object-fit: cover;
+}
+
+.center-avatar div:nth-child(2) {
+    margin-left: 2%;
+    flex: 0 0 65%;
+}
+
+.center-avatar div:nth-child(2) p:first-child {
+    font-size: 22px;
+    margin: 0;
+}
+
+.center-avatar div:nth-child(2) p:nth-child(2) {
+    color: #999999;
+    font-size: 15px;
+}
+.center-avatar-right{
+    text-align: right;
+    flex: 0 0 20%;
+}
+.center-avatar-right .center-btnInfo{
+    border: none;
+    height: 25px;
+    width: 70px;
+    background-color: lightgreen;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.center-btnAtt{
+    border: none;
+    height: 25px;
+    width: 70px;
+    background-color: #ff827f;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.center-tag {
+    width: 80%;
+    margin: 2% auto;
+}

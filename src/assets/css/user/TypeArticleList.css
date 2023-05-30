@@ -1,0 +1,71 @@
+.type-article-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    border-radius: 12px;
+    margin: 2%;
+    border: 3px dashed #FF5722;
+    background: linear-gradient(to top, green, 3px, transparent 3px),
+    linear-gradient(to right, green, 3px, transparent 3px),
+    linear-gradient(to bottom, green, 3px, transparent 3px),
+    linear-gradient(to left, green, 3px, transparent 3px);
+    background-origin: border-box;
+}
+
+.type-article-item-left {
+    flex: 0 0 65%;
+}
+
+.type-article-item-left h2 {
+    cursor: pointer;
+}
+
+.type-article-item-left-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.type-article-item-left-user span {
+    margin: 0 1%;
+}
+
+.type-article-item-left-user img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.type-article-item-left p {
+    margin: 1% 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /*autoprefixer: on */
+    -webkit-line-clamp: 1;
+}
+
+.type-article-item-right {
+    height: 15vh;
+    flex: 0 0 25%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.type-article-item-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all .7s ease .1s;
+}
+
+.type-article-item-right img:hover {
+    transform: scale(1.3);
+}

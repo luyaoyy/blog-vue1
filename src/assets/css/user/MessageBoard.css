@@ -1,0 +1,242 @@
+.board-out {
+    background: url("../../images/messagebk1.jpg") no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.board-content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.message-content {
+    background-color: rgba(161, 194, 228, 0.5);
+    border: none;
+    color: black;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.message-content div:nth-child(2) {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.message-content div:nth-child(2) p {
+    flex: 0 0 95%;
+}
+
+.message-content div:nth-child(2) button {
+    flex: 0 0 4%;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255,0,0,0.4);
+    font-family: luyys, serif;
+}
+
+.board-userInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.board-userInfo img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+.board-userInfo p {
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.message-content:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.029);
+    transition: all 0.8s;
+}
+
+.is-top {
+    color: black;
+    font-size: 18px;
+}
+
+.board-action {
+    position: fixed;
+    bottom: 10vh;
+    right: 4vw;
+}
+
+.board-action button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.board-action button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.board-action button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.board-action button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+.board-action button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+.board-action button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+.board-action button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.board-action button:hover svg {
+    transform: rotate(45deg);
+}
+
+.message-send {
+    display: flex;
+}
+
+.message-send button {
+    font-size: 20px;
+    flex: 0 0 20%;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(167, 127, 95, 0.5);
+}
+
+.message-send button:hover {
+    cursor: pointer;
+}
+
+.group {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 65%;
+    margin-right: 8%;
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.message-send label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.bar {
+    position: relative;
+    display: block;
+
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}

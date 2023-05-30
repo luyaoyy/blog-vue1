@@ -1,0 +1,19 @@
+.music-manage-out{
+    background-image: url("../../images/bg5.png");
+    height: auto;
+}
+.music-manage-content{
+    width: 70%;
+    margin: 2% auto;
+    box-sizing: border-box;
+    height: 87vh;
+    border-radius: 16px;
+    background-color: #fff;
+}
+.music-manage-content .el-aside{
+    padding: 2% 0;
+    height: 66vh;
+}
+.music-manage-content .el-menu-item{
+    font-size: 20px;
+}

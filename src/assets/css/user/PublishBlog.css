@@ -1,0 +1,91 @@
+.publish-out{
+    background: url("../../images/bg5.png") repeat;
+}
+table tr th, table tr td {
+    border: 1px solid;
+    padding: 6px 13px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.publish-top {
+    padding: 1% 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.publish-top-d1 {
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.publish-top-d1 span {
+    text-align: left;
+    font-size: 22px;
+    flex: 0 0 7%;
+}
+
+.publish-top-d1 .publish-title {
+    margin-right:  1%;
+    flex: 0 0 35%;
+}
+
+.publish-top-d1 .publish-desc {
+    margin-right: 1%;
+    flex: 0 0 40%;
+}
+
+.publish-top-d1 button {
+    flex: 0 0 5%;
+}
+
+.publish-top-d2 {
+    width: 100%;
+    display: flex;
+    padding: 0.5% 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.publish-top-d2 span {
+    font-size: 18px !important;
+    border-radius: 8px !important;
+    border: 1px solid #409eff !important;
+}
+
+.publish-top-d2 label {
+    margin:0.5% 0.5% 0.5% 0;
+}
+
+.publish-top-d2 p {
+    padding: 0;
+    margin: 0;
+    flex: 0 0 7%;
+}
+
+.publish-tag {
+    flex: 0 0 85%;
+}
+
+.publish-top-d3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.publish-top-d3 p{
+    padding: 0;
+    margin: 0;
+    flex: 0 0 7%;
+}

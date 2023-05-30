@@ -1,0 +1,98 @@
+.bottom-out {
+    padding: 0.5% 0;
+    width: 100%;
+    height: 30vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(187, 133, 133,0.5);
+
+}
+
+.bottom-left {
+    flex: 0 0 55%;
+    /*border: 1px solid red;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.bottom-left p {*/
+/*    width: 100%;*/
+/*    font-size: 22px;*/
+/*    text-align: center;*/
+/*}*/
+.bottom-motto{
+    flex: 0 0 38%;
+    margin: 1%;
+    font-size: 18px;
+    padding: 1%;
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 28vh;
+}
+.bottom-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 45%;
+    margin: 1%;
+    text-align: center
+}
+.bottom-about p{
+    margin: 0;
+    padding: 1%;
+}
+.bottom-about a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.bottom-right {
+    flex: 0 0 22%;
+    /*border: 1px solid black;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom-right p{
+    font-size: 25px;
+}
+
+.bottom-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image div {
+    flex: 0 0 33%;
+    text-align: center;
+}
+.contact-image img{
+    width: 70%;
+}
+
+.contact-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text span {
+    text-align: center;
+    flex: 0 0 33%;
+}

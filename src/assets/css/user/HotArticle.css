@@ -1,0 +1,60 @@
+
+.hot-title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding: 2% 0;
+    margin: 0;
+}
+
+.card-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-item h1 {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+.card-item p {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+.hot-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: -80%;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.4);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /*autoprefixer: on */
+    -webkit-line-clamp: 1;
+}
+
+.hot-info h1 {
+    margin: 4% auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.hot-info p {
+    text-align: center;
+    margin: 1% 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

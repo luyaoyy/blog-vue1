@@ -1,0 +1,88 @@
+
+.img {
+    /* 过渡配置 */
+    transition: all .7s ease .1s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div:hover img {
+    /* 放大1.3倍 */
+    transform: scale(1.3);
+}
+
+.div:hover {
+    cursor: pointer;
+}
+
+.div {
+    flex: 0 0 32%;
+    margin: 0.5%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    animation-duration: 2.5s;
+    height: 42vh;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 248, 248, 0.4);
+    color: black;
+    height: 60%;
+    position: relative;
+    top: -60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /*autoprefixer: on */
+    -webkit-line-clamp: 15;
+}
+
+.info h2 {
+    text-align: center;
+    flex-wrap: nowrap;
+    display: block;
+    margin: 8% auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.info p {
+    text-align: center;
+    margin: 5% auto;
+}
+
+/deep/ .el-carousel__indicators--horizontal {
+    position: absolute;
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
+}
+
+.el-carousel__indicator--horizontal button {
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.el-carousel__indicator--horizontal.is-active button {
+    width: 24px;
+    height: 8px;
+    background: #8eb9d7;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
